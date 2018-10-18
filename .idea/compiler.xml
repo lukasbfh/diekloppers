@@ -7,11 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="camp" />
+        <module name="modul" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="camp" target="1.5" />
+      <module name="camp" target="1.8" />
       <module name="heroes" target="1.5" />
+      <module name="modul" target="1.5" />
     </bytecodeTargetLevel>
   </component>
 </project>
