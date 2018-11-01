@@ -1,5 +1,8 @@
-main.class
-model\Hero.class
 model\Party.class
 service\HeroService.class
+service\impl\DefaultHeroService.class
+service\impl\DefaultPartyService.class
+Application.class
+model\Hero.class
 service\PartyService.class
+config\ServiceConfiguration.class
