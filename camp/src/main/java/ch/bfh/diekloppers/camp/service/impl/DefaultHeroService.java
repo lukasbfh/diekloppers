@@ -1,7 +1,7 @@
-package service.impl;
+package ch.bfh.diekloppers.camp.service.impl;
 
-import model.Hero;
-import service.HeroService;
+import ch.bfh.diekloppers.camp.model.Hero;
+import ch.bfh.diekloppers.camp.service.HeroService;
 import org.springframework.stereotype.Service;
 
 import java.util.Random;
