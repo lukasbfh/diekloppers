@@ -1,8 +1,8 @@
-model\Party.class
-service\HeroService.class
-service\impl\DefaultHeroService.class
-service\impl\DefaultPartyService.class
-Application.class
-model\Hero.class
-service\PartyService.class
-config\ServiceConfiguration.class
+ch\bfh\diekloppers\camp\service\impl\DefaultPartyService.class
+ch\bfh\diekloppers\camp\Application.class
+ch\bfh\diekloppers\camp\service\impl\DefaultHeroService.class
+ch\bfh\diekloppers\camp\config\ServiceConfiguration.class
+ch\bfh\diekloppers\camp\model\Hero.class
+ch\bfh\diekloppers\camp\model\Party.class
+ch\bfh\diekloppers\camp\service\HeroService.class
+ch\bfh\diekloppers\camp\service\PartyService.class

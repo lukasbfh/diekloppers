@@ -1,8 +1,8 @@
-C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\model\Hero.java
-C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\config\ServiceConfiguration.java
-C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\Application.java
-C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\service\PartyService.java
-C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\service\impl\DefaultHeroService.java
-C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\service\impl\DefaultPartyService.java
-C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\model\Party.java
-C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\service\HeroService.java
+C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\ch\bfh\diekloppers\camp\service\impl\DefaultPartyService.java
+C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\ch\bfh\diekloppers\camp\service\impl\DefaultHeroService.java
+C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\ch\bfh\diekloppers\camp\service\PartyService.java
+C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\ch\bfh\diekloppers\camp\model\Hero.java
+C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\ch\bfh\diekloppers\camp\model\Party.java
+C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\ch\bfh\diekloppers\camp\Application.java
+C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\ch\bfh\diekloppers\camp\service\HeroService.java
+C:\Users\lukas\IdeaProjects\heroes\camp\src\main\java\ch\bfh\diekloppers\camp\config\ServiceConfiguration.java
