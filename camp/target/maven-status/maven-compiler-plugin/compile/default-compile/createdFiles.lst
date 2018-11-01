@@ -1,0 +1,5 @@
+main.class
+model\Hero.class
+model\Party.class
+service\HeroService.class
+service\PartyService.class
