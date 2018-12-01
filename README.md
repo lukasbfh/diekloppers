@@ -9,5 +9,5 @@ Spring Core
 Spring Data                         
 Spring Boot
 Spring MVC
-Spring RESTful Services   
+Spring RESTful Services for Hero and Party 
 ```
