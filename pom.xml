@@ -19,6 +19,7 @@
         <module>camp</module>
         <module>arena</module>
         <module>promoter</module>
+        <module>registry</module>
     </modules>
 
 
