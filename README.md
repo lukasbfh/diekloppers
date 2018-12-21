@@ -11,4 +11,5 @@ Spring Boot
 Spring MVC
 Spring RESTful Services for Hero and Party 
 Microservices for Arena and Promoter
+Spring Cloud
 ```
