@@ -1,5 +1,6 @@
 
 
+
 # Heroes
 This is the repository for the modul "Java Open Source" experimental OSS frameworks.
 This sample project Heroes should demonstrate the use of different open source frameworks. 
@@ -27,14 +28,20 @@ Spring Cloud (Eureka Registry, Hystrix Fallback and Zuul)
   * [Status](#status)
   * [Problems](#problems)
 
-## Purpose of the Application
-The aim of the paradigm is to provide a comprehensive overview of the development of a microservices, highlighting different aspects using different architectural views.
-
 ##	Audience
 This project is primarily aimed at software architects, lead developers, software developers and other people involved in the development process. Since this is a technical artifact, knowledge of software development is required.
 
+## Purpose of the Application
+The aim of the paradigm is to provide a comprehensive overview of the development of a microservices, highlighting different aspects using different architectural views.
+
 ## Requirements
 The solution of the application must be realized according to microservice architecture style. This approach maps all interactions in the system and with the database via the REST interface.
+
+## Extensions
+We started with the spring cloud application provided by our professor Villars Roger. We extended the application with the following points: 
+
+	 - Heroes with swords can fight against each other
+	 - We redesigned the DefaultBattleService with this new abbility and for our needs
 
 # Installation
 Start the following microservices. Please start the services in the following order:
