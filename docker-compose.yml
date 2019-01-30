@@ -1,0 +1,28 @@
+version: "3.4"
+services:
+  registry:
+    build: ./registry
+    networks:
+      - diekloppers
+    ports:
+      - "1111:1111"
+  camp:
+    build: ./camp
+    networks:
+      - diekloppers
+  arena:
+    build: ./arena
+    networks:
+      - diekloppers
+  promoter:
+    build: ./promoter
+    networks:
+      - diekloppers
+  frontend:
+    build: ./frontend
+    networks:
+      - diekloppers
+    ports:
+      - "8080:8080"
+networks:
+  diekloppers:
