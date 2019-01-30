@@ -1,6 +1,7 @@
 
 
 
+
 # Heroes
 This is the repository for the modul "Java Open Source" experimental OSS frameworks.
 This sample project Heroes should demonstrate the use of different open source frameworks. 
@@ -50,7 +51,9 @@ Start the following microservices. Please start the services in the following or
  - Camp (localhost:2222)
  - Arena (localhost:3333)
  - Promoter (localhost:4444)
- - Frontend (localhost:8080)
+ - Frontend (localhost:8080).
+
+You can also start all microservices with docker. Please run docker-compose. This feature is not running in stable mode. Sometimes it occurs the error: "error: Could not find or load main class docker run ". Refer to "Status" in this Readme.
 
 # Running 
 When you have succesfully started the 5 microservices you should now see on the localhost:1111 the registry (Eureka) with all the services registered (camp, application, promoter, frontend). 
@@ -90,12 +93,13 @@ The module project has the following properties:
 | Name | Full name of the project.| Heroes |
 
 # Status
-
+The project is running good with the eureka registry. We have sometimes problem to docker-compose the project. There is sometimes the Error: Cannot find main class. We lost a lot of time to search for an answer for this problem, but we didnt succeed. Currently the docker-compose works not stabel enough. If you have the same problem by installing this project, and you know the answer please contact us! 
 # Problems
 We had several promels during the project. The biggest problems are listed here, maybe it will help you for your project ;)
 
  - Dependencies: We had a lot of problems with the dependencies in the beggining. The problem is that you need to write the exact dependency in your pom. In Intellij we had the problem that the spring framework wasnt detected after the project was created. We had to use the "Spring Initializer". This is a very usefull tool to create a new spring application!
  - Registry: The registry service with eureka does register himself in the registry if the following line is not provided in the application properties: 
+ - Docker: We had a few problems with building the artifacts in Intellij. There was a problem in the project configuration. When you add a file to the artifacts in Project Settings/Artifacts and then add JAR From Modules with dependencies, then you have to add the MainClass. You can search by typing the main class. Further we had to problem to build the docker-compose file. Always make sure that you are in the right configuration mode on docker (Windows or Linux Containers!).
  ```
  eureka.client.register-with-eureka=false  
 eureka.client.fetch-registry=false
