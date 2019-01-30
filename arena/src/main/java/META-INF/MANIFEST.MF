@@ -1,0 +1,48 @@
+Manifest-Version: 1.0
+Class-Path: jackson-datatype-jsr310-2.9.6.jar spring-boot-starter-2.0.
+ 5.RELEASE.jar commons-lang-2.6.jar xpp3_min-1.1.4c.jar gson-2.8.5.jar
+  spring-boot-starter-json-2.0.5.RELEASE.jar jsr311-api-1.1.1.jar spri
+ ng-cloud-starter-netflix-ribbon-2.0.2.RELEASE.jar spring-jcl-5.0.9.RE
+ LEASE.jar commons-math-2.2.jar hystrix-core-1.5.12.jar spring-cloud-s
+ tarter-2.0.2.RELEASE.jar tomcat-embed-core-8.5.34.jar spring-plugin-c
+ ore-1.2.0.RELEASE.jar ribbon-core-2.2.5.jar classmate-1.3.4.jar xstre
+ am-1.4.10.jar compactmap-1.2.1.jar log4j-to-slf4j-2.10.0.jar jackson-
+ datatype-jdk8-2.9.6.jar servo-core-0.12.21.jar spring-hateoas-0.25.0.
+ RELEASE.jar xmlpull-1.1.3.1.jar eureka-core-1.9.3.jar netflix-infix-0
+ .3.0.jar snakeyaml-1.19.jar spring-boot-autoconfigure-2.0.5.RELEASE.j
+ ar spring-boot-2.0.5.RELEASE.jar rxnetty-servo-0.4.9.jar netflix-even
+ tbus-0.3.0.jar spring-cloud-starter-netflix-eureka-client-2.0.2.RELEA
+ SE.jar spring-context-5.0.9.RELEASE.jar jackson-module-parameter-name
+ s-2.9.6.jar slf4j-api-1.7.25.jar joda-time-2.9.9.jar jettison-1.3.7.j
+ ar log4j-api-2.10.0.jar spring-web-5.0.9.RELEASE.jar spring-boot-star
+ ter-web-2.0.5.RELEASE.jar rxnetty-0.4.9.jar spring-boot-starter-aop-2
+ .0.5.RELEASE.jar antlr-2.7.7.jar commons-codec-1.11.jar stax-api-1.0-
+ 2.jar validation-api-2.0.1.Final.jar ribbon-2.2.5.jar tomcat-embed-we
+ bsocket-8.5.34.jar spring-boot-starter-hateoas-2.0.5.RELEASE.jar aopa
+ lliance-1.0.jar logback-classic-1.2.3.jar spring-cloud-commons-2.0.2.
+ RELEASE.jar javax.inject-1.jar spring-webmvc-5.0.9.RELEASE.jar rxnett
+ y-contexts-0.4.9.jar bcpkix-jdk15on-1.60.jar netflix-statistics-0.1.1
+ .jar commons-configuration-1.8.jar spring-cloud-netflix-core-2.0.2.RE
+ LEASE.jar commons-jxpath-1.3.jar spring-cloud-netflix-ribbon-2.0.2.RE
+ LEASE.jar archaius-core-0.7.6.jar jackson-databind-2.9.6.jar aspectjw
+ eaver-1.8.13.jar ribbon-eureka-2.2.5.jar spring-cloud-netflix-eureka-
+ client-2.0.2.RELEASE.jar jersey-client-1.19.1.jar spring-cloud-contex
+ t-2.0.2.RELEASE.jar spring-expression-5.0.9.RELEASE.jar rxjava-1.3.8.
+ jar spring-boot-starter-tomcat-2.0.5.RELEASE.jar bcprov-jdk15on-1.60.
+ jar jboss-logging-3.3.2.Final.jar tomcat-embed-el-8.5.34.jar spring-c
+ loud-starter-netflix-archaius-2.0.2.RELEASE.jar commons-collections-3
+ .2.2.jar woodstox-core-asl-4.4.1.jar spring-beans-5.0.9.RELEASE.jar g
+ uava-16.0.jar httpclient-4.5.6.jar dexx-collections-0.2.jar spring-cl
+ oud-netflix-archaius-2.0.2.RELEASE.jar ribbon-httpclient-2.2.5.jar sp
+ ring-aop-5.0.9.RELEASE.jar ribbon-transport-2.2.5.jar stringtemplate-
+ 3.2.1.jar jackson-annotations-2.9.0.jar netflix-commons-util-0.3.0.ja
+ r stax2-api-3.1.4.jar spring-security-rsa-1.0.7.RELEASE.jar spring-co
+ re-5.0.9.RELEASE.jar spring-security-crypto-5.0.8.RELEASE.jar antlr-r
+ untime-3.4.jar guice-4.1.0.jar jackson-core-2.9.6.jar stax-api-1.0.1.
+ jar eureka-client-1.9.3.jar hibernate-validator-6.0.12.Final.jar ribb
+ on-loadbalancer-2.2.5.jar jul-to-slf4j-1.7.25.jar javax.annotation-ap
+ i-1.3.2.jar httpcore-4.4.10.jar logback-core-1.2.3.jar jersey-apache-
+ client4-1.19.1.jar spring-boot-starter-logging-2.0.5.RELEASE.jar HdrH
+ istogram-2.1.9.jar jersey-core-1.19.1.jar
+Main-Class: ch.bfh.diekloppers.arena.ArenaApplication
+
