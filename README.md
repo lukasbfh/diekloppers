@@ -113,4 +113,4 @@ The items are still being created but never used.
  eureka.client.register-with-eureka=false  
 eureka.client.fetch-registry=false
  ```
-Final Note: The module was super interesting and I'm confident to explore the spring framework even more in the future on our own. 
+Final Note: The module was super interesting and we are confident to explore the spring framework even more in the future on our own. 
