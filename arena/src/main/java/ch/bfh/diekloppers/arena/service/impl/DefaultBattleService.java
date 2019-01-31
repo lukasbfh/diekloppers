@@ -119,11 +119,11 @@ public class DefaultBattleService implements BattleService {
         // harm = damage - defense
         double harm = 0;
         if (miss <= 1){
-            LOG.info("Defending "+defender.getName()+" lost no health. The attack missed!");
+            LOG.info("Defending "+defender.getName()+" lost no health. The attack missed!"); //missed attacks
         }
         else if (crit <= 1){
             harm = (damage - (damage * (defense/100))) * 3;
-            LOG.info("Defending "+defender.getName()+" lost "+f.format(harm)+" of health. Critical hit!");
+            LOG.info("Defending "+defender.getName()+" lost "+f.format(harm)+" of health. Critical hit!"); //critical attacks 3 times dmg
         }
         else {
             harm = damage - (damage * (defense / 100));

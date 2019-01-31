@@ -2,7 +2,9 @@ package ch.bfh.diekloppers.camp.config;
 
 import ch.bfh.diekloppers.camp.service.HeroService;
 import ch.bfh.diekloppers.camp.service.PartyService;
+import ch.bfh.diekloppers.camp.service.ItemService;
 import ch.bfh.diekloppers.camp.service.impl.DefaultHeroService;
+import ch.bfh.diekloppers.camp.service.impl.DefaultItemService;
 import ch.bfh.diekloppers.camp.service.impl.DefaultPartyService;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -19,4 +21,7 @@ public class ServiceConfiguration {
     public PartyService partyService() {
         return new DefaultPartyService();
     }
+
+    @Bean
+    public ItemService itemService() {return new DefaultItemService(); }
 }
