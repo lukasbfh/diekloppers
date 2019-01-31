@@ -6,10 +6,12 @@ import ch.bfh.diekloppers.arena.service.BattleService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import sun.rmi.runtime.Log;
 
 import java.text.DecimalFormat;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 @Service
 public class DefaultBattleService implements BattleService {
@@ -98,7 +100,12 @@ public class DefaultBattleService implements BattleService {
     private void round(Hero attacker, Hero defender) {
         double defenderHp = defender.getHp();
 
+        // Critical and Miss Chance are both 20%
+        int crit = new Random().nextInt(10);
+        int miss = new Random().nextInt(10);
+
         // damage is 1/10 of ATK
+
         double damage = attacker.getAtk();
         if (damage < 1) damage++;
         damage = damage/10.0;
@@ -110,9 +117,18 @@ public class DefaultBattleService implements BattleService {
         LOG.info("Defending "+defender.getName()+" blocked "+defense+" percent of damage.");
 
         // harm = damage - defense
-        double harm = damage - (damage * (defense/100));
-        LOG.info("Defending "+defender.getName()+" lost "+f.format(harm)+" of health.");
-
+        double harm = 0;
+        if (miss <= 1){
+            LOG.info("Defending "+defender.getName()+" lost no health. The attack missed!");
+        }
+        else if (crit <= 1){
+            harm = (damage - (damage * (defense/100))) * 3;
+            LOG.info("Defending "+defender.getName()+" lost "+f.format(harm)+" of health. Critical hit!");
+        }
+        else {
+            harm = damage - (damage * (defense / 100));
+            LOG.info("Defending " + defender.getName() + " lost " + f.format(harm) + " of health.");
+        }
         // harm is drawn from defenders hp
         defenderHp -= harm;
         LOG.info("Defending "+defender.getName()+" has "+f.format(Math.max(0,defenderHp))+" health points left.");
