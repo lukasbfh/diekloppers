@@ -2,6 +2,7 @@
 
 
 
+
 # Heroes
 This is the repository for the modul "Java Open Source" experimental OSS frameworks.
 This sample project Heroes should demonstrate the use of different open source frameworks. 
@@ -102,21 +103,14 @@ We had several promels during the project. The biggest problems are listed here,
  - Dependencies: We had a lot of problems with the dependencies in the beggining. The problem is that you need to write the exact dependency in your pom. In Intellij we had the problem that the spring framework wasnt detected after the project was created. We had to use the "Spring Initializer". This is a very usefull tool to create a new spring application!
  - Registry: The registry service with eureka does register himself in the registry if the following line is not provided in the application properties: 
  - Docker: We had a few problems with building the artifacts in Intellij. There was a problem in the project configuration. When you add a file to the artifacts in Project Settings/Artifacts and then add JAR From Modules with dependencies, then you have to add the MainClass. You can search by typing the main class. Further we had to problem to build the docker-compose file. Always make sure that you are in the right configuration mode on docker (Windows or Linux Containers!).
+ - The Addition of the items first was thought as implementing another microservice shop, which sells the items.
+ - Time issues led to implementing the items directly in the camp service.
+ - New entities (model, controller, service etc.), were implemented for the items. We struggled then with attaching those items to the hero.
+ - For showcasing purpose another random int was added to the stat directly in the hero creation.
+The items are still being created but never used.
+- The Battleservice extension with missing and critical hits was fairly straight forward. Next step would be adding those affixes to the items and eventually heroes.
  ```
  eureka.client.register-with-eureka=false  
 eureka.client.fetch-registry=false
  ```
-
-So the Addition of the items first was thought as implementing another microservice shop, which sells the items.
-
-Time issues led to implementing the items directly in the camp service.
-
-New entities (model, controller, service etc.), were implemented for the items. We struggled then with attaching those items to the hero.
-
-For showcasing purpose another random int was added to the stat directly in the hero creation.
-
-The items are still being created but never used.
-
-The Battleservice extension with missing and critical hits was fairly straight forward. Next step would be adding those affixes to the items and eventually heroes.
-
-Final Note: The module was super interesting and I'm confident to explore the spring framework even more in the future on my own.
+Final Note: The module was super interesting and I'm confident to explore the spring framework even more in the future on our own. 
