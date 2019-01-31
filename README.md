@@ -42,8 +42,8 @@ The solution of the application must be realized according to microservice archi
 ## Extensions
 We started with the spring cloud application provided by our professor Villars Roger. We extended the application with the following points: 
 
-	 - Heroes with swords can fight against each other
-	 - We redesigned the DefaultBattleService with this new abbility and for our needs
+	 - Heroes have items (swords and shields) to complement the stats (atk/def)
+	 - Battleservice is extended with the posibility of critical and missing hits
 
 # Installation
 Start the following microservices. Please start the services in the following order:
@@ -95,6 +95,7 @@ The module project has the following properties:
 
 # Status
 The project is running good with the eureka registry. We have sometimes problem to docker-compose the project. There is sometimes the Error: Cannot find main class. We lost a lot of time to search for an answer for this problem, but we didnt succeed. Currently the docker-compose works not stabel enough. If you have the same problem by installing this project, and you know the answer please contact us! 
+
 # Problems
 We had several promels during the project. The biggest problems are listed here, maybe it will help you for your project ;)
 
@@ -105,3 +106,17 @@ We had several promels during the project. The biggest problems are listed here,
  eureka.client.register-with-eureka=false  
 eureka.client.fetch-registry=false
  ```
+
+So the Addition of the items first was thought as implementing another microservice shop, which sells the items.
+
+Time issues led to implementing the items directly in the camp service.
+
+New entities (model, controller, service etc.), were implemented for the items. We struggled then with attaching those items to the hero.
+
+For showcasing purpose another random int was added to the stat directly in the hero creation.
+
+The items are still being created but never used.
+
+The Battleservice extension with missing and critical hits was fairly straight forward. Next step would be adding those affixes to the items and eventually heroes.
+
+Final Note: The module was super interesting and I'm confident to explore the spring framework even more in the future on my own.
